@@ -139,6 +139,7 @@ call everforest#highlight('StatusLineNC', s:palette.grey1, s:palette.bg0)
 call everforest#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg0)
 call everforest#highlight('TabLine', s:palette.grey2, s:palette.bg3)
 call everforest#highlight('TabLineFill', s:palette.bg0, s:palette.bg0)
+call everforest#highlight('TabLineOpen', s:palette.grey2, s:palette.bg0)
 call everforest#highlight('TabLineSel', s:palette.bg0, s:palette.statusline1)
 call everforest#highlight('VertSplit', s:palette.bg4, s:palette.none)
 call everforest#highlight('Visual', s:palette.none, s:palette.bg_visual)
@@ -860,7 +861,7 @@ highlight! link SignatureMarkerText PurpleSign
 " ap/vim-buftabline {{{
 highlight! link BufTabLineCurrent TabLineSel
 highlight! link BufTabLineActive TabLine
-highlight! link BufTabLineHidden TabLineFill
+highlight! link BufTabLineHidden TabLineOpen
 highlight! link BufTabLineFill TabLineFill
 " }}}
 " liuchengxu/vim-which-key {{{

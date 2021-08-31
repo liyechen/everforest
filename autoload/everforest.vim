@@ -14,7 +14,7 @@ let g:everforest#tmux = executable('tmux') && $TMUX !=# '' ?
                   \ 0 "}}}
 function! everforest#get_configuration() "{{{
   return {
-        \ 'background': get(g:, 'everforest_background', 'medium'),
+        \ 'background': get(g:, 'everforest_background', 'hard'),
         \ 'transparent_background': get(g:, 'everforest_transparent_background', 0),
         \ 'disable_italic_comment': get(g:, 'everforest_disable_italic_comment', 0),
         \ 'enable_italic': get(g:, 'everforest_enable_italic', 0),
